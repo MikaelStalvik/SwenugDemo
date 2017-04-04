@@ -1,0 +1,42 @@
+﻿<Page x:Class="GameDemo.Wpf.Pages.GameDetailPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GameDemo.Wpf.Pages"
+      mc:Ignorable="d" 
+      Loaded="GameDetailPage_OnLoaded"
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="GameDetailPage">
+
+    <Grid>
+        <StackPanel Margin="8">
+            <Button Content="Back" Click="ButtonBase_OnClick"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="128"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Image Source="{Binding ImageUrl}" Width="128" Grid.Row="0" Grid.Column="0"/>
+                <StackPanel Grid.Row="0" Grid.Column="1">
+                    <TextBlock Text="Publisher"/>
+                    <TextBlock Text="{Binding SelectedGame.Publisher}"/>
+                    
+                    <TextBlock Text="Release Year" Margin="0,8,0,0"/>
+                    <TextBlock Text="{Binding SelectedGame.ReleaseYear}"/>
+
+                    <TextBlock Text="Platform" Margin="0,8,0,0"/>
+                    <TextBlock Text="{Binding SelectedGame.Platform}"/>
+                </StackPanel>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding SelectedGame.Description}" TextWrapping="Wrap"/>
+                
+            </Grid>
+        </StackPanel>        
+    </Grid>
+</Page>

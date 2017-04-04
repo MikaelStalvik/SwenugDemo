@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="primaryColor">#2196F3</color>
+  <color name="primaryColorDark">#1976D2</color>
+  <color name="accentColor">#FFC107</color>
+  <color name="window_background">#F5F5F5</color>
+  
+  <color name="bgcolor">#ffffff</color>
+  <color name="text_color">#232324</color>
+  <color name="cell_color">#fefefe</color>
+  <color name="ripplebg_color">#303030</color>
+</resources>

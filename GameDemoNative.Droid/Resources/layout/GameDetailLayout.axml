@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin"
+        android:id="@+id/textViewDetailTitle" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/textViewDetailTitle"
+        android:id="@+id/imageViewLarge" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageViewLarge"
+        android:id="@+id/textViewPublisher"
+        android:layout_below="@id/textViewDetailTitle"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPublisher"
+        android:id="@+id/textViewReleaseYear"
+        android:layout_toRightOf="@id/imageViewLarge" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewReleaseYear"
+        android:id="@+id/textViewPlatform"
+        android:layout_toRightOf="@id/imageViewLarge" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageViewLarge"
+        android:id="@+id/textViewDescription" />
+</RelativeLayout>

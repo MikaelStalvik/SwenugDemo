@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+      android:text="Login"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_marginTop="@dimen/top_margin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/textViewLoginTitle" />
+  <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter username"
+        android:id="@+id/editTextUsername" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:id="@+id/editTextPassword"
+        android:layout_marginTop="@dimen/control_margin" />
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:id="@+id/buttonLogin" />
+</LinearLayout>
